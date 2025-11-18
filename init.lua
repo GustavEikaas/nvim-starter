@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.opt.wrap = false
 vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.expandtab = true
+vim.opt.softtabstop = 2
 
 -- Escape insert mode easily with jj
 vim.keymap.set("i", "jj", "<Esc>", {})

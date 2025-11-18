@@ -8,7 +8,7 @@ return
         bin_path = vim.fs.joinpath(vim.fn.stdpath("data"), "mason/bin/netcoredbg.cmd"),
       },
       test_runner = {
-	viewmode = "float"
+        viewmode = "float"
       }
     })
   end
