@@ -1,7 +1,7 @@
 ---@type vim.lsp.Config
 return {
   init_options = { hostInfo = 'neovim' },
-  cmd = { 'typescript-language-server', '--stdio' },
+  cmd = { vim.fs.joinpath(vim.fn.stdpath("data"), "mason/bin/typescript-language-server.cmd"), '--stdio' },
   filetypes = {
     'javascript',
     'javascriptreact',

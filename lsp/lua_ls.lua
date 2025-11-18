@@ -1,6 +1,6 @@
 ---@type vim.lsp.Config
 return {
-  cmd = { 'lua-language-server' },
+  cmd = { vim.fs.joinpath(vim.fn.stdpath("data"), "mason/bin/lua-language-server.cmd")},
   filetypes = { 'lua' },
   root_markers = {
     '.emmyrc.json',
