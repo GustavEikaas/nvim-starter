@@ -13,7 +13,7 @@
 9. Install treesitter
 10. Install snacks
 11. Install easy-dotnet.nvim
-1x. Instal nvim-dap
-12. Install netcoredbg
-13. Test debugger
+12. Instal nvim-dap
+13. Install netcoredbg
+14. Test debugger
 
