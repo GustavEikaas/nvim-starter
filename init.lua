@@ -6,6 +6,7 @@ vim.opt.shiftwidth = 2
 vim.keymap.set("i", "jj", "<Esc>", {})
 --Save with Ctrl + s
 vim.keymap.set("n", "<C-s>", ":w<CR>", {})
+vim.opt.clipboard = "unnamedplus"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
