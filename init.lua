@@ -1,5 +1,11 @@
 vim.g.mapleader = " "
 vim.opt.wrap = false
+vim.opt.shiftwidth = 2
+
+-- Escape insert mode easily with jj
+vim.keymap.set("i", "jj", "<Esc>", {})
+--Save with Ctrl + s
+vim.keymap.set("n", "<C-s>", ":w<CR>", {})
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -23,4 +29,6 @@ require("lazy").setup({
 		notify = false,
 	},
 })
+
 vim.cmd("filetype plugin on")
+vim.lsp.enable({"lua_ls", "ts_ls"})
