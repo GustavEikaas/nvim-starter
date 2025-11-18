@@ -5,7 +5,7 @@ return
   config = function()
     require("easy-dotnet").setup({
       debugger = {
-        bin_path = [[C:\Users\gustav.eikaas\AppData\Local\nvim-data\mason\bin\netcoredbg.cmd]],
+        bin_path = vim.fs.joinpath(vim.fn.stdpath("data"), "mason/bin/netcoredbg.cmd"),
       },
       test_runner = {
 	viewmode = "float"
