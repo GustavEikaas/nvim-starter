@@ -11,7 +11,7 @@
 7. Copy config from nvim-lspconfig
 8. Enable lua_ls/ts_ls
 9. Install treesitter
-10. Install snacks
+10. Install snacks (choco install ripgrep), find comes with git (PATH = "C:\Program Files\Git\usr\bin\")
 11. Install easy-dotnet.nvim
 12. Instal nvim-dap
 13. Install netcoredbg
